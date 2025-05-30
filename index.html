@@ -70,7 +70,7 @@
             transform-style: preserve-3d;
         }
         .falling-text {
-            color: #ff69b4;
+            color: white; /* Đổi màu chữ thành trắng */
             font-size: 5vw;
             white-space: nowrap;
             opacity: 0.9;
@@ -80,14 +80,14 @@
             animation: fadeInOut 3s infinite alternate;
         }
         .heart {
-            color: #ff4040;
+            color: white; /* Đổi màu chữ thành trắng */
             font-size: 4vw;
             opacity: 0.8;
             text-shadow: 0 0 10px #ff4040, 0 0 20px #ff4040, 0 0 30px #ff4040;
             animation: float 5s infinite ease-in-out;
         }
         .rose {
-            color: #ff6347;
+            color: white; /* Đổi màu chữ thành trắng */
             font-size: 3vw;
             opacity: 0.7;
             transform: rotate(45deg);
@@ -129,15 +129,21 @@
 <body>
     <div id="scene"></div>
     <audio id="backgroundMusic" loop>
-        <source src="https://nhatlinh04.github.io/to_tinh_niu/Ni%20Ny%20C%20Anh%20Lyrics%20Video.mp3" type="audio/mpeg">
+        <source src="https://cdn.jsdelivr.net/gh/love-uu-forever/love15@main/camonvidaden.mp3" type="audio/mpeg">
         Trình duyệt của bạn không hỗ trợ thẻ âm thanh.
     </audio>
     <script>
         const texts = [
-            "Cảm ơn vì em đã đến!",
-            "Ai lớp diu chu cà mo ♥",
-            "Anh sẽ luôn bên cạnh em ♥",
-            "Quân♥Phương"
+"Happy Birthday 🎂",
+  "Xuân Vũ",
+  "11.8.1997 🌻",
+  "Chúc bạn tôi tuổi mới càng đẹp trai",
+  "May mắn, bình an",
+  "Sớm trở thành phú ông giàu có💵",
+  "8386 mãi đỉnh",
+"Happy Birthday 🎂",
+  "Xuân Vũ",
+  "11.8.1997 🌻",
         ];
 
         const scene = document.getElementById("scene");
@@ -256,7 +262,7 @@
             text.classList.add(layerClass);
             text.style.left = startX + "px";
             text.style.top = startY + "px";
-            text.style.color = `#ff69b4`;
+            text.style.color = `white`; /* Đổi màu chữ thành trắng */
 
             scene.appendChild(text);
             activeTexts.push(text);
